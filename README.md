@@ -1,8 +1,8 @@
 # FileZilla-Password-Decryptor
 
-This Python script can be used to crack FileZilla passwords stored in a "FileZilla Server.xml" file. Extract the password and salt strings from the XML file into the Python script and use the --wordlist parameter to state your password list for the brute forcing attack. The script will then compute each SHA512+SALT hash and compare it to your password hash. If a match has been calculated, the password will be displayed.
+This Python script can be used to crack FileZilla passwords stored in a "FileZilla Server.xml" file. Extract the password and salt strings from the XML file into the Python script and use the --wordlist parameter to state your password list for the brute forcing attack. The script will then compute each SHA512 hash and compare it to your password hash. If a match has been calculated, the clear text password will be displayed.
 
-Note: FileZilla's XML file escapes special characters for the SALT string. So you will need to unescape them first (e.g. with BurpSuite's Decoder, using "Smart Decode")! Then specify it in the Python script by escaping special characters again that break Python's string syntax.
+Note: FileZilla's XML file escapes special characters for the SALT string. So you will need to unescape them first (e.g. with BurpSuite's Decoder, using "Smart Decode")! Then specify it in the Python script and escape all characters with a backslash that may break Python's string syntax.
 
 ```
 &amp; = &
