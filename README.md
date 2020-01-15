@@ -14,7 +14,6 @@ Note: FileZilla's XML file escapes special characters for the SALT string. So yo
 # Example
 Escaped:        `!U3`CQ;a&amp;3IzbXc/4Wpb\)OZ3TsXP;&apos;Wx#^K&quot;Tu_XX.K&apos;o&lt;&apos;c&amp;A:vItTX-M|Z0Y
 Unescaped:      `!U3`CQ;a&3IzbXc/4Wpb\)OZ3TsXP;'Wx#^K"Tu_XX.K'o<'c&A:vItTX-M|Z0Y
-Python String:  `!U3`CQ;a&3IzbXc/4Wpb\\)OZ3TsXP;\'Wx#^K"Tu_XX.K\'o<\'c&A:vItTX-M|Z0Y
 ```
 
 ### Usage:
